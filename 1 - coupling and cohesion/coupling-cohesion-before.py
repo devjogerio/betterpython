@@ -32,7 +32,7 @@ class Application:
         elif brand == "BMW 5":
             catalogue_price = 45000
 
-        # compute the tax percentage (default 5% of the catalogue price, except for electric cars where it is 2%)
+        # calcular a percentagem do imposto (padrão 5% do preço de catálogo, exceto para carros elétricos onde é 2%)
         tax_percentage = 0.05
         if brand == "Tesla Model 3" or brand == "Volkswagen ID3":
             tax_percentage = 0.02
@@ -41,11 +41,11 @@ class Application:
         payable_tax = tax_percentage * catalogue_price
 
         # print out the vehicle registration information
-        print("Registration complete. Vehicle information:")
-        print(f"Brand: {brand}")
+        print("Cadastro concluído. Informações do veículo:")
+        print(f"marcar: {brand}")
         print(f"Id: {vehicle_id}")
-        print(f"License plate: {license_plate}")
-        print(f"Payable tax: {payable_tax}")
+        print(f"placa do veiculo: {license_plate}")
+        print(f"Imposto a pagar: {payable_tax}")
 
 app = Application()
 app.register_vehicle("Volkswagen ID3")
